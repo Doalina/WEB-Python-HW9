@@ -26,10 +26,10 @@ class QuotesSpider(scrapy.Spider):
         if next_link:
                 yield scrapy.Request(url=self.start_urls[0] + next_link)
                 
-        with open('src/quotes.json', 'w') as json_file:
+        with open('src/quotes.json', 'w', indent=4) as json_file:
             json.dump(self.quote_list, json_file)  
             
-        with open('src/authors.json', 'w') as json_file:
+        with open('src/authors.json', 'w', indent=4) as json_file:
             json.dump(self.author_data_list, json_file)          
  
     def author_parse(self, response):
