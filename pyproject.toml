@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "web-python-hw9"
+version = "0.1.0"
+description = ""
+authors = ["Doalina <125969411+Doalina@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "web_python_hw9"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+scrapy = "^2.10.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
